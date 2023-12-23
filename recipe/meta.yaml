@@ -4,33 +4,40 @@ package:
 
 build:
   noarch: generic
-  number: 0
+  number: 1
 
 requirements:
   run:
-    - amrex
-    - impactx
+    - fbpic
     - hipace
+    - impactx
     - impact-t
     - impact-z
-    - libensemble
+    - lasy
     - openpmd-api
     - openpmd-validator
     - openpmd-viewer
+    - optimas
     - pyamrex
+    - wake-t
     - warpx
 
 # future:
 # - BeamBeam3D (no recipe yet)
-# - FBPIC (pip-only)
-# - optimas (pip-only)
-# - Wake-T (pip-only)
+# - VisualPIC (pip only)
 
 test:
   imports:
     - amrex
+    - fbpic
     - impactx
+    - lasy
+    - openpmd_api
+    - openpmd_validator
+    - openpmd_viewer
+    - optimas
     - pywarpx
+    - wake_t
 
 about:
   home: https://blast.lbl.gov
